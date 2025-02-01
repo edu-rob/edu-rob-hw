@@ -3,7 +3,7 @@
 
 #ifdef DEBUG
 #define debugPrint(msg) Serial.println(msg)
-#elif
+#else
 #define debugPrint(msg)
 #endif
 
