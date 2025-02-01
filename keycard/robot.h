@@ -1,4 +1,5 @@
-
+#ifndef ROBOT_H
+#define ROBOT_H
 
 class Robot {
 public:
@@ -9,3 +10,5 @@ public:
   void right(int deg = 90);
 private:
 };
+
+#endif
