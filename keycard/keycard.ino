@@ -1,6 +1,11 @@
 #include "ICHack.h"
 
+#include "interpreter.h"
+#include "common.h"
+
 #define DEBUG
+
+CommandInterpreter interpreter;
 
 void setup() {
 #ifdef DEBUG
@@ -11,10 +16,13 @@ void setup() {
 
 
 void loop() {
-#ifdef DEBUG
-  static int i = 0;
-  Serial.printf("Hey from lanyard %d!\n", i);
-  i++;
-#endif
-  delay(1000);
+  String commands;
+  if ((commands = Serial.readString()) == "") {
+    return;
+  }
+  
+  commands.trim();
+  debugPrint("Sending ");
+  debugPrint(commands);
+  interpreter.send(commands);
 }

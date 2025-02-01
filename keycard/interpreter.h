@@ -1,23 +1,22 @@
 #ifndef INTERPRETER_H
 #define INTERPRETER_H
 
-#include <string>
-
 #include "robot.h"
 
 class CommandInterpreter {
 public:
   CommandInterpreter();
-  void send(std::string message);
+  void send(String message);
 private:
   enum class Token {
     FORWARDS,
     BACKWARDS,
     LEFT,
-    RIGHT
+    RIGHT,
+    ERROR
   };
 
-  Token commandToToken(std::string command);
+  Token commandToToken(String command);
   Robot robot;
 };
 

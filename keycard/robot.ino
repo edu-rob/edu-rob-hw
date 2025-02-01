@@ -1,5 +1,9 @@
 #include "robot.h"
 
+Robot::Robot() {
+  
+}
+
 void Robot::forwards(int meters) {
 
 }
