@@ -5,7 +5,7 @@
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="VNTjEeWvVJIymOvos0lJ-4" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;IC-Badge&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="200" y="50" width="560" height="350" as="geometry" />
+          <mxGeometry x="200" y="110" width="560" height="290" as="geometry" />
         </mxCell>
         <mxCell id="VNTjEeWvVJIymOvos0lJ-1" value="ESP32 BT" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="1">
           <mxGeometry x="120" y="480" width="140" height="100" as="geometry" />
@@ -79,7 +79,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="VNTjEeWvVJIymOvos0lJ-18" value="GPIO" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="200" y="110" width="120" height="30" as="geometry" />
+          <mxGeometry x="200" y="150" width="120" height="30" as="geometry" />
         </mxCell>
         <mxCell id="VNTjEeWvVJIymOvos0lJ-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="VNTjEeWvVJIymOvos0lJ-19" target="VNTjEeWvVJIymOvos0lJ-7">
           <mxGeometry relative="1" as="geometry" />
