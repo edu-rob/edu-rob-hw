@@ -7,6 +7,12 @@
 
 CommandInterpreter interpreter;
 
+
+// Create the frame buffer. The first 24 bits of each uint32_t
+// represent one column of the LED matrix. You can write to this
+// buffer directly and patters will appear on the display.
+volatile uint32_t fb[FRAME_BUFFER_WIDTH];
+
 void setup() {
 #ifdef DEBUG
   Serial.begin(115200);
@@ -16,6 +22,13 @@ void setup() {
   Serial1.setFIFOSize(512);
   Serial1.begin(9600);
   delay(500);
+    // Initialise the display by passing it the frame buffer. This
+  // will create a thread that continuously renders the frame
+  // buffer to the matrix.
+  display_init(fb);
+  delay(1000);
+  pinMode(LOGO_I, OUTPUT);
+  digitalWrite(LOGO_I, HIGH); /* turn the I on */
 }
 
 void loop() {
