@@ -2,9 +2,9 @@
 #define COMMON_H
 
 #ifdef DEBUG
-#define debugPrint(msg) Serial.println(msg)
+  #define debugPrint(msg) Serial.println(msg)
 #else
-#define debugPrint(msg)
+  #define debugPrint(msg)
 #endif
 
 #endif

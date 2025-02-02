@@ -16,7 +16,7 @@ private:
     ERROR
   };
 
-  Token commandToToken(String command);
+  Token commandToToken(String command, int& value);
   Robot robot;
 };
 
