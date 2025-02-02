@@ -26,6 +26,8 @@ CommandInterpreter::Token CommandInterpreter::commandToToken(String command, int
 
   if (end.length() != 0) {
     value = std::stoi(end.c_str());
+  } else {
+    value = 10;
   }
 
   if (commandToken == FORWARDS_TOKEN) {

@@ -3,7 +3,7 @@
 #include "interpreter.h"
 #include "common.h"
 
-#define DEBUG 1
+// #define DEBUG 1
 
 CommandInterpreter interpreter;
 
